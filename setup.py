@@ -26,7 +26,7 @@ def _parse_requirements(file_path):
 
 # parse_requirements() returns generator of pip.req.InstallRequirement objects
 try:
-    install_reqs = _parse_requirements("requirements.txt")
+    install_reqs = _parse_requirements("/content/MaskRcnn-Medium/requirements.txt")
 except Exception:
     logging.warning('Fail load requirements file, so using default ones.')
     install_reqs = []
